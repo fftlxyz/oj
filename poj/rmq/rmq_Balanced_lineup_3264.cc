@@ -36,7 +36,7 @@ int main(int argc, const char *argv[])
         dp_min[i][0] = dp_max[i][0] =  height[i];
     }
 
-    for (int j = 1; (1 << j) < n; ++j) {
+    for (int j = 1; (1 << j) <= n; ++j) {   //这个地方写错了
         int len = 1 << j;
         for (int i = n - 1; i > -1 ; --i) {
             if (i + len <= n) {
