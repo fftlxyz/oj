@@ -1,5 +1,5 @@
 *.tmp
 *.swp
-/test/
+/test/*
 !/test/*.sh
 !/test/*.py
